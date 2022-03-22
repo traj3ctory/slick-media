@@ -4,8 +4,6 @@
 **/
 
 const Home = ({data}) => {
-
-    console.log(data, 'hello');
     return (
         <div className="movie_card border-0">
             <div className="img_container">

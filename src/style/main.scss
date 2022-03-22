@@ -79,7 +79,6 @@ body {
     font-size: 0.9rem;
     background-color: #e5e5e5;
     transition: all 0.3s ease-in-out;
-    
   }
   label {
     color: #000000;
@@ -108,6 +107,10 @@ body {
   }
   div.card.card-body {
     background-color: #e5e5e5;
+  }
+  // minimum height for display movies
+  div.display_movies {
+    min-height: 50vh;
   }
 }
 

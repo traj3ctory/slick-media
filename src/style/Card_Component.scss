@@ -1,0 +1,53 @@
+body {
+  // Card component for the main page
+  div.movie_card {
+    min-width: 10rem;
+    height: 10rem;
+    background: #000000;
+    border-radius: 0.3rem;
+    margin-right: 0.5rem;
+    div.img_container {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      h4 {
+        position: absolute;
+        top: 40%;
+        left: 16%;
+        right: 16%;
+        width: 68%;
+        color: #ffffff;
+        font-size: 0.9rem;
+        background-color: #00000088;
+      }
+      img.img-fluid {
+        height: inherit;
+      }
+    }
+  }
+
+  // =========== MOVIE LIST
+  div.movie_list {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+    &::-webkit-scrollbar {
+      width: 0; /* Remove scrollbar space */
+      background: transparent; /* Optional: just make scrollbar invisible */
+      display: none;
+    }
+    /* Optional: show position indicator in red */
+    &::-webkit-scrollbar-thumb {
+      background: transparent;
+    }
+  }
+  h5.title {
+    text-transform: capitalize;
+    color: #000000;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+}

@@ -38,9 +38,12 @@ const Home = () => {
                     <label htmlFor="search">Search</label>
                     <input type="text" name="search" id="search" onChange={(e) => setParams(e.target.value)} value={params} placeholder="movie search" />
                 </div>
-                {movies && <MovieList header={params} movies={movies} />}
-                {movies && <MovieList header={params} movies={movies} />}
-                {movies.length === 0 && <div className="d-flex h-100 align-items-center justify-content-center"><h3>No movies found</h3></div>}
+                <div className="display_movies">
+                    {movies && <MovieList header={params} movies={movies} />}
+                    {movies && <MovieList header={params} movies={movies} />}
+                    {movies.length === 0 && <div className="d-flex h-100 align-items-center justify-content-center"><h3>No movies found</h3></div>
+                    }
+                </div>
             </section>
         </>
     );
